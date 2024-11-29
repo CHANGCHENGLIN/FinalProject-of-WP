@@ -8,14 +8,13 @@ body {
     color: #333;
 }
 
-/* Containers for Centered Layout */
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Header Styles */
+/* Header */
 header {
     background: linear-gradient(135deg, #007BFF, #0056b3);
     color: white;
@@ -64,7 +63,7 @@ h2 {
 }
 
 /* Activities Section */
-#activities .activity-card {
+.activity-card {
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -74,7 +73,7 @@ h2 {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-#activities .activity-card:hover {
+.activity-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
@@ -140,7 +139,7 @@ h2 {
 }
 
 /* Signup Form */
-#signup-form iframe {
+iframe {
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -155,33 +154,4 @@ footer {
     font-size: 0.9rem;
     letter-spacing: 1px;
     text-transform: uppercase;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    header .btn {
-        font-size: 0.8rem;
-        padding: 8px 12px;
-    }
-
-    main {
-        padding: 15px;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    .signup-btn {
-        padding: 8px 15px;
-        font-size: 0.9rem;
-    }
-
-    #comments textarea {
-        font-size: 0.9rem;
-    }
 }

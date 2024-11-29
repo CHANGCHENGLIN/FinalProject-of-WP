@@ -21,3 +21,12 @@ function displayComments() {
         .map(comment => `<li>${comment}</li>`)
         .join('');
 }
+
+document.getElementById('translate-btn').addEventListener('click', () => {
+    // Example: Toggle between hardcoded English and Chinese
+    const activityTitle = document.querySelector('.card h3');
+    activityTitle.textContent = 
+        activityTitle.textContent === 'Activity Title' 
+        ? '活动标题' 
+        : 'Activity Title';
+});

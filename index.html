@@ -8,42 +8,52 @@
 </head>
 <body>
     <header>
-        <h1>IBPI Student Association</h1>
-        <button id="translate-btn" class="btn">Translate</button>
+        <div class="container">
+            <h1>IBPI Student Association</h1>
+            <button id="translate-btn" class="btn">Translate</button>
+        </div>
     </header>
 
     <main>
         <!-- Activities Section -->
         <section id="activities">
-            <h2>Upcoming Activities</h2>
-            <div class="activity-card">
-                <h3 data-translate data-en="Activity Title" data-cn="活动标题">Activity Title</h3>
-                <p data-translate data-en="Date: December 10, 2024" data-cn="日期：2024年12月10日">Date: December 10, 2024</p>
-                <p data-translate data-en="Description: Join us for a fun and engaging session on teamwork and collaboration!" 
-                    data-cn="描述：加入我们，共同参与一个有趣的团队合作课程！">
-                    Description: Join us for a fun and engaging session on teamwork and collaboration!
-                </p>
-                <button class="btn signup-btn">Sign Up</button>
+            <div class="container">
+                <h2>Upcoming Activities</h2>
+                <div class="activity-card">
+                    <h3 data-translate data-en="Activity Title" data-cn="活动标题">Activity Title</h3>
+                    <p data-translate data-en="Date: December 10, 2024" data-cn="日期：2024年12月10日">Date: December 10, 2024</p>
+                    <p data-translate data-en="Description: Join us for a fun and engaging session on teamwork and collaboration!" 
+                        data-cn="描述：加入我们，共同参与一个有趣的团队合作课程！">
+                        Description: Join us for a fun and engaging session on teamwork and collaboration!
+                    </p>
+                    <button class="btn signup-btn">Sign Up</button>
+                </div>
             </div>
         </section>
 
         <!-- Comments Section -->
         <section id="comments">
-            <h2>Comments</h2>
-            <textarea id="comment-input" placeholder="Leave a comment..."></textarea>
-            <button id="add-comment" class="btn">Add Comment</button>
-            <ul id="comment-list"></ul>
+            <div class="container">
+                <h2>Comments</h2>
+                <textarea id="comment-input" placeholder="Leave a comment..."></textarea>
+                <button id="add-comment" class="btn">Add Comment</button>
+                <ul id="comment-list"></ul>
+            </div>
         </section>
 
         <!-- Signup Form -->
         <section id="signup-form">
-            <h2>Sign Up</h2>
-            <iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true" width="100%" height="500" frameborder="0">Loading…</iframe>
+            <div class="container">
+                <h2>Sign Up</h2>
+                <iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true" width="100%" height="500" frameborder="0">Loading…</iframe>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 IBPI Student Association</p>
+        <div class="container">
+            <p>&copy; 2024 IBPI Student Association</p>
+        </div>
     </footer>
 
     <script src="app.js"></script>

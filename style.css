@@ -1,118 +1,38 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     line-height: 1.6;
-    color: #333;
 }
 
-/* Navigation Bar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background: #007BFF;
-    color: #fff;
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-.navbar .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.navbar .nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.navbar .nav-links li {
-    margin: 0 1rem;
-}
-
-.navbar .nav-links a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-}
-
-.language-toggle {
-    background: #fff;
+header .btn {
+    background-color: #fff;
     color: #007BFF;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
 }
 
-/* Hero Section */
-.hero {
-    height: 90vh;
-    background: url('../assets/images/hero-bg.jpg') no-repeat center center/cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-    padding: 0 2rem;
+header .btn:hover {
+    background-color: #e1e1e1;
 }
 
-.hero .btn {
-    margin-top: 1rem;
-    padding: 0.7rem 1.5rem;
-    background: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Activities Section */
-.activities {
-    padding: 2rem;
-    text-align: center;
-    background: #f9f9f9;
-}
-
-.activities h2 {
-    margin-bottom: 1rem;
-}
-
-.activity-cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.card {
-    background: #fff;
-    margin: 1rem;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.card h3 {
-    margin-bottom: 0.5rem;
-}
-
-.card .btn {
-    background: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#activities {
+/* Main Content */
+main {
     padding: 20px;
+}
+
+#activities, #comments, #signup-form {
+    margin-bottom: 40px;
 }
 
 .activity-card {
@@ -135,18 +55,29 @@ body {
     background-color: #0056b3;
 }
 
+/* Comments Section */
+#comment-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#comment-list {
+    list-style: none;
+    padding: 0;
+}
+
+#comment-list li {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
 
 /* Footer */
 footer {
+    background-color: #333;
+    color: white;
     text-align: center;
-    padding: 1rem;
-    background: #007BFF;
-    color: #fff;
-}
-
-footer .social-icons a {
-    margin: 0 0.5rem;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
+    padding: 10px 0;
 }

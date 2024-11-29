@@ -111,6 +111,31 @@ body {
     cursor: pointer;
 }
 
+#activities {
+    padding: 20px;
+}
+
+.activity-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.signup-btn {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    background-color: #0056b3;
+}
+
+
 /* Footer */
 footer {
     text-align: center;

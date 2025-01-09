@@ -1,19 +1,22 @@
 /* General Styles */
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background-color: #f9f9f9;
     color: #333;
-    background: #f9f9f9;
 }
 
 /* Header Styles */
 header {
-    background: linear-gradient(to right, #4CAF50, #81C784);
+    background-color: #003366;
     color: white;
-    padding: 10px 20px;
+    padding: 1rem 2rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 .logo-container {
@@ -23,98 +26,68 @@ header {
 
 .logo {
     width: 50px;
-    margin-right: 10px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 15px;
 }
 
-.nav-links {
-    display: flex;
+nav ul {
     list-style: none;
+    display: flex;
+    gap: 1rem;
 }
 
-.nav-links li {
-    margin: 0 10px;
+nav ul li {
+    display: inline;
 }
 
-.nav-links a {
+nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
 }
 
-.nav-links a:hover {
-    color: #ffeb3b;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 50px 20px;
-    background: url('images/hero-bg.jpg') no-repeat center center/cover;
-    color: white;
+/* Section Styles */
+main {
+    padding: 2rem;
 }
 
-.hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 1.2rem;
-}
-
-/* Activities Section */
-.activities-section {
-    padding: 20px;
-    background: #fff;
-}
-
-.activity-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.activity-card {
-    background: #f1f1f1;
-    padding: 15px;
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
 }
 
-.activity-card:hover {
-    transform: translateY(-5px);
+section h2 {
+    margin-top: 0;
+    color: #003366;
 }
 
-/* Comments Section */
-.comments-section {
-    padding: 20px;
-    background: #fff;
-    margin-top: 20px;
-}
-
-#comment-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-#post-comment {
-    background: #4CAF50;
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #003366;
     color: white;
+    padding: 1rem 0;
+    position: relative;
+}
+
+/* Google Sign-In Button */
+#google-signin {
     padding: 10px 20px;
+    background-color: #4285F4;
+    color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #333;
-    color: white;
+#google-signin:hover {
+    background-color: #357ae8;
 }

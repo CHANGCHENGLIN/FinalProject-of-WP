@@ -30,29 +30,11 @@ header h1 {
     text-transform: uppercase;
 }
 
-/* Logo Styling */
-.logo {
-    width: 60px; /* Adjust size as needed */
-    height: auto;
-    border-radius: 50%; /* Optional: Makes the image circular */
-    margin-right: 15px; /* Space between the logo and text */
-    vertical-align: middle;
-}
-
-/* Adjust header layout */
-header .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header h1 {
-    margin: 0;
-    flex-grow: 1; /* Ensures the title takes up available space */
-    text-align: left; /* Align title next to logo */
-}
-
 header .btn {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
     background-color: #fff;
     color: #007BFF;
     border: none;

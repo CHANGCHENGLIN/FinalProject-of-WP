@@ -4,7 +4,8 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f9f9f9;
+    background-color: #f7f7f7;
+    color: #333;
 }
 
 .container {
@@ -15,25 +16,33 @@ body {
 
 /* Header */
 header {
-    background-color: #007BFF;
+    background: linear-gradient(135deg, #007BFF, #0056b3);
     color: white;
     padding: 20px 0;
+    text-align: center;
+    position: relative;
 }
 
 header h1 {
+    font-size: 2.5rem;
     margin: 0;
-    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 header .btn {
-    float: right;
-    margin-right: 20px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
     background-color: #fff;
     color: #007BFF;
     border: none;
     padding: 10px 15px;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
 }
 
 header .btn:hover {
@@ -45,57 +54,104 @@ main {
     padding: 20px 0;
 }
 
-#activities, #comments, #signup-form {
-    margin-bottom: 40px;
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #007BFF;
+    text-shadow: 1px 1px 2px #ccc;
 }
 
+/* Activities Section */
 .activity-card {
     background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.activity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 .signup-btn {
+    display: inline-block;
     background-color: #007BFF;
     color: #fff;
     border: none;
-    padding: 10px 15px;
+    padding: 10px 20px;
     border-radius: 5px;
+    font-size: 1rem;
+    text-transform: uppercase;
     cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .signup-btn:hover {
     background-color: #0056b3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Comments Section */
-#comment-input {
+#comments textarea {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    resize: none;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+}
+
+#comments button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#comments button:hover {
+    background-color: #218838;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 #comment-list {
     list-style: none;
     padding: 0;
+    margin-top: 20px;
 }
 
 #comment-list li {
-    background-color: #f4f4f4;
-    padding: 10px;
-    margin-bottom: 5px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
     border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Signup Form */
+iframe {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
 footer {
-    background-color: #333;
+    background: #333;
     color: white;
     text-align: center;
     padding: 10px 0;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }

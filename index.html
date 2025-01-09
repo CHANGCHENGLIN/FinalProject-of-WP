@@ -7,55 +7,49 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <div class="container">
+        <div class="logo-container">
             <img src="images/IBPI頭貼1.png" alt="IBPI Logo" class="logo">
             <h1>IBPI Student Association</h1>
-            <button id="translate-btn" class="btn">Translate</button>
         </div>
+        <nav>
+            <ul>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#announcements">Announcements</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#signup">Sign Up</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <!-- Main Section -->
     <main>
-        <!-- Activities Section -->
         <section id="activities">
-            <div class="container">
-                <h2>Upcoming Activities</h2>
-                <div class="activity-card">
-                    <h3 data-translate data-en="Activity Title" data-cn="活动标题">Activity Title</h3>
-                    <p data-translate data-en="Date: December 10, 2024" data-cn="日期：2024年12月10日">Date: December 10, 2024</p>
-                    <p data-translate data-en="Description: Join us for a fun and engaging session on teamwork and collaboration!" 
-                        data-cn="描述：加入我们，共同参与一个有趣的团队合作课程！">
-                        Description: Join us for a fun and engaging session on teamwork and collaboration!
-                    </p>
-                    <button class="btn signup-btn">Sign Up</button>
-                </div>
-            </div>
+            <h2>Activities</h2>
+            <p>Explore upcoming activities organized by the IBPI Student Association.</p>
         </section>
 
-        <!-- Comments Section -->
-        <section id="comments">
-            <div class="container">
-                <h2>Comments</h2>
-                <textarea id="comment-input" placeholder="Leave a comment..."></textarea>
-                <button id="add-comment" class="btn">Add Comment</button>
-                <ul id="comment-list"></ul>
-            </div>
+        <section id="announcements">
+            <h2>Announcements</h2>
+            <p>Stay updated with the latest announcements about our events and activities.</p>
         </section>
 
-        <!-- Signup Form -->
-        <section id="signup-form">
-            <div class="container">
-                <h2>Sign Up</h2>
-                <iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true" 
-                        width="100%" height="500" frameborder="0">Loading…</iframe>
-            </div>
+        <section id="news">
+            <h2>News</h2>
+            <p>Read about the highlights of our past activities and community involvement.</p>
+        </section>
+
+        <section id="signup">
+            <h2>Sign Up</h2>
+            <p>Join us by signing up! Stay connected with our community and events.</p>
+            <button id="google-signin">Sign in with Google</button>
         </section>
     </main>
 
+    <!-- Footer Section -->
     <footer>
-        <div class="container">
-            <p>&copy; IBPI Student Association</p>
-        </div>
+        <p>&copy; 2024 IBPI Student Association. All rights reserved.</p>
     </footer>
 
     <script src="app.js"></script>

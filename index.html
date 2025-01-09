@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IBPI Student Association</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
 </head>
 <body>
-    <!-- Header Section -->
+    <!-- Header -->
     <header>
-        <div class="logo-container">
-            <img src="images/IBPI頭貼1.png" alt="IBPI Logo" class="logo">
-            <h1 id="title">IBPI Student Association</h1>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="images/IBPI頭貼1.png" alt="IBPI Logo" class="logo">
+                <h1 id="title">IBPI Student Association</h1>
+            </div>
+            <button id="translate-button" class="translate-btn">Translate</button>
         </div>
-        <button id="translate-button">Translate</button>
         <nav>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#activities" id="nav-activities">Activities</a></li>
                 <li><a href="#announcements" id="nav-announcements">Announcements</a></li>
                 <li><a href="#news" id="nav-news">News</a></li>
@@ -24,25 +27,24 @@
         </nav>
     </header>
 
-    <!-- Main Section -->
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Welcome to IBPI Student Association</h2>
+        <p>Your one-stop platform for activities, events, and announcements!</p>
+    </section>
+
+    <!-- Main Content -->
     <main>
         <!-- Activities Section -->
-        <section id="activities">
+        <section id="activities" class="activities-section">
             <h2 id="activities-title">Activities</h2>
-            <div class="activity">
-                <h3 id="activity1-title">Activity 1: Sports Day</h3>
-                <p id="activity1-description">Join us for a fun sports day event with games and prizes!</p>
-                <button onclick="navigateToActivity('activity1')">Learn More</button>
-            </div>
-            <div class="activity">
-                <h3 id="activity2-title">Activity 2: Art Workshop</h3>
-                <p id="activity2-description">Unleash your creativity in our art workshop!</p>
-                <button onclick="navigateToActivity('activity2')">Learn More</button>
+            <div id="activity-cards" class="activity-cards">
+                <!-- Activity cards will be dynamically loaded -->
             </div>
         </section>
 
         <!-- Comments Section -->
-        <section id="comments">
+        <section id="comments" class="comments-section">
             <h2 id="comments-title">Comments</h2>
             <textarea id="comment-input" placeholder="Leave your comment"></textarea>
             <button id="post-comment">Post Comment</button>
@@ -50,11 +52,9 @@
         </section>
     </main>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 IBPI Student Association. All rights reserved.</p>
     </footer>
-
-    <script src="app.js"></script>
 </body>
 </html>

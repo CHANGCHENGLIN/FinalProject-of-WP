@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate data-en="IBPI Student Association" data-tw="資訊英專班學會">IBPI Student Association</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .ig-photo {
+            width: 100%;
+            max-width: 300px;
+            margin: 20px auto;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .container form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        .container form input,
+        .container form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .container form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .container form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <img src="images/IBPI頭貼1.png" alt="IBPI Logo" class="logo">
+            <h1 data-translate data-en="IBPI Student Association" data-tw="資訊英專班學會">IBPI Student Association</h1>
+            <button id="translate-btn" class="btn" data-translate data-en="翻譯" data-tw="Translate" onclick="translatePage()">翻譯</button>        </div>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="container">
+                <button class="nav-btn" onclick="location.href='index.html'" data-translate data-en="Home" data-tw="首頁">Home</button>
+                <div class="dropdown">
+                    <button class="nav-btn" data-translate data-en="Event Details" data-tw="活動資訊">Event Details</button>
+                    <div class="dropdown-content">
+                        <a href="event1.html" data-translate data-en="Four Department Joint Winter Break Science Camp" data-tw="四系寒假科學營">Four Department Joint Winter Break Science Camp</a>
+                        <a href="event2.html" data-translate data-en="Coding Bootcamp" data-tw="編程訓練營">Coding Bootcamp</a>
+                        <a href="event3.html" data-translate data-en="AI and Machine Learning Workshop" data-tw="人工智慧與機器學習工作坊">AI and Machine Learning Workshop</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="nav-btn" data-translate data-en="Results" data-tw="活動成果">Results</button>
+                    <div class="dropdown-content">
+                        <a href="result1.html" data-translate data-en="Four Department Joint Winter Break Science Camp Results" data-tw="四系寒假科學營成果">Four Department Joint Winter Break Science Camp Results</a>
+                        <a href="result2.html" data-translate data-en="Coding Bootcamp Results" data-tw="編程訓練營成果">Coding Bootcamp Results</a>
+                        <a href="result3.html" data-translate data-en="AI and Machine Learning Workshop Results" data-tw="人工智慧與機器學習工作坊成果">AI and Machine Learning Workshop Results</a>
+                    </div>
+                </div>
+                <button class="nav-btn" onclick="location.href='contact.html'" data-translate data-en="Contact" data-tw="聯絡我們">Contact</button>
+                <button class="nav-btn" onclick="location.href='about.html'" data-translate data-en="About" data-tw="關於我們">About</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2 data-translate data-en="Contact Us" data-tw="聯絡我們">Contact Us</h2>
+            <form action="submit_contact.php" method="post">
+                <label for="name" data-translate data-en="Name" data-tw="姓名">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email" data-translate data-en="Email" data-tw="電子郵件">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message" data-translate data-en="Message" data-tw="訊息">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" class="btn" data-translate data-en="Submit" data-tw="提交">Submit</button>
+            </form>
+            <p data-translate data-en="Follow us on Instagram: " data-tw="在Instagram上關注我們：">Follow us on Instagram: </p>
+            </p>
+            <a href="https://www.instagram.com/yzu_ibpi_7th?igshid=dnZyZ2lwMDhwMTBl" target="_blank">
+                <img src="images/IG.jpg" alt="Instagram Photo" class="ig-photo">
+            </a>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p data-translate data-en="&copy; IBPI Student Association" data-tw="&copy; 資訊英專班學會">
+                &copy; IBPI Student Association
+            </p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

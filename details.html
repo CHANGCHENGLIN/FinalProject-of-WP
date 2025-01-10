@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>資訊英專班學會</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <img src="images/IBPI頭貼1.png" alt="IBPI Logo" class="logo">
+            <h1 data-translate data-en="Event Details" data-tw="活動資訊">Event Details</h1>
+            <button id="translate-btn" class="btn" data-translate data-en="翻譯" data-tw="Translate" onclick="translatePage()">翻譯</button>
+        </div>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="container">
+                <button class="nav-btn" onclick="location.href='index.html'" data-translate data-en="Home" data-tw="首頁">Home</button>
+                <div class="dropdown">
+                    <button class="nav-btn" data-translate data-en="Event Details" data-tw="活動資訊">Event Details</button>
+                    <div class="dropdown-content">
+                        <a href="event1.html" data-translate data-en="Four Department Joint Winter Break Science Camp" data-tw="四系寒假科學營">Four Department Joint Winter Break Science Camp</a>
+                        <a href="event2.html" data-translate data-en="Coding Bootcamp" data-tw="編程訓練營">Coding Bootcamp</a>
+                        <a href="event3.html" data-translate data-en="AI and Machine Learning Workshop" data-tw="人工智慧與機器學習工作坊">AI and Machine Learning Workshop</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="nav-btn" data-translate data-en="Results" data-tw="活動成果">Results</button>
+                    <div class="dropdown-content">
+                        <a href="result1.html" data-translate data-en="Four Department Joint Winter Break Science Camp Results" data-tw="四系寒假科學營成果">Four Department Joint Winter Break Science Camp Results</a>
+                        <a href="result2.html" data-translate data-en="Coding Bootcamp Results" data-tw="編程訓練營成果">Coding Bootcamp Results</a>
+                        <a href="result3.html" data-translate data-en="AI and Machine Learning Workshop Results" data-tw="人工智慧與機器學習工作坊成果">AI and Machine Learning Workshop Results</a>
+                    </div>
+                </div>
+                <button class="nav-btn" onclick="location.href='contact.html'" data-translate data-en="Contact" data-tw="聯絡我們">Contact</button>
+                <button class="nav-btn" onclick="location.href='about.html'" data-translate data-en="About" data-tw="關於我們">About</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2 data-translate data-en="Event Details" data-tw="活動資訊">Event Details</h2>
+            <div class="event-detail">
+                <h3><a href="event1.html" data-translate data-en="Four Department Joint Winter Break Science Camp" data-tw="四系寒假科學營">Four Department Joint Winter Break Science Camp</a></h3>
+                <p data-translate data-en="Date: January 22-24, 2025" data-tw="日期：2025年01月22日-2025年01月24日">Date: January 22-24, 2025</p>
+                <p data-translate data-en="Location: National Taiwan University" data-tw="地點：國立臺灣大學">Location: National Taiwan University</p>
+                <p data-translate data-en="Description: This camp aims to train participants in autonomy and leadership through organizing winter vacation nature science camps for primary and secondary schools. Participants will experience social service and find joy and motivation in it, fully embodying the spirit of service to the people." data-tw="描述：本營隊旨在通過為中小學生組織寒假自然科學營，訓練參與者的自主性和領導能力。參與者將體驗社會服務，並在其中找到樂趣和動力，充分體現服務人民的精神。">Description: This camp aims to train participants in autonomy and leadership through organizing winter vacation nature science camps for primary and secondary schools. Participants will experience social service and find joy and motivation in it, fully embodying the spirit of service to the people.</p>
+                <p data-translate data-en="Application Deadline: January 01, 2025" data-tw="報名截止日期：2025年01月01日">Application Deadline: January 01, 2025</p>
+            </div>
+            <div class="event-detail">
+                <h3><a href="event2.html" data-translate data-en="Coding Bootcamp" data-tw="編程訓練營">Coding Bootcamp</a></h3>
+                <p data-translate data-en="Date: January 15, 2025" data-tw="日期：2025年1月15日">Date: January 15, 2025</p>
+                <p data-translate data-en="Location: National Taiwan University" data-tw="地點：國立臺灣大學">Location: National Taiwan University</p>
+                <p data-translate data-en="Description: An intensive coding bootcamp designed to improve your programming skills. Participants will engage in hands-on coding sessions and projects, learning from experienced instructors." data-tw="描述：一個旨在提高您編程技能的密集訓練營。參與者將參加實踐編程課程和項目，向經驗豐富的講師學習。">Description: An intensive coding bootcamp designed to improve your programming skills. Participants will engage in hands-on coding sessions and projects, learning from experienced instructors.</p>
+                <p data-translate data-en="Application Deadline: January 10, 2025" data-tw="報名截止日期：2025年01月10日">Application Deadline: January 10, 2025</p>
+            </div>
+            <div class="event-detail">
+                <h3><a href="event3.html" data-translate data-en="AI and Machine Learning Workshop" data-tw="人工智慧與機器學習工作坊">AI and Machine Learning Workshop</a></h3>
+                <p data-translate data-en="Date: February 10-12, 2025" data-tw="日期：2025年02月10日-2025年02月12日">Date: February 10-12, 2025</p>
+                <p data-translate data-en="Location: National Taiwan University" data-tw="地點：國立臺灣大學">Location: National Taiwan University</p>
+                <p data-translate data-en="Description: A workshop focused on AI and machine learning techniques. Participants will learn about the latest advancements in AI and machine learning, and work on practical projects to apply their knowledge." data-tw="描述：一個專注於人工智慧和機器學習技術的工作坊。參與者將了解人工智慧和機器學習的最新進展，並參與實踐項目以應用他們的知識。">Description: A workshop focused on AI and machine learning techniques. Participants will learn about the latest advancements in AI and machine learning, and work on practical projects to apply their knowledge.</p>
+                <p data-translate data-en="Application Deadline: February 01, 2025" data-tw="報名截止日期：2025年02月01日">Application Deadline: February 01, 2025</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p data-translate data-en="&copy; IBPI Student Association" data-tw="&copy; 資訊英專班學會">
+                &copy; IBPI Student Association
+            </p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

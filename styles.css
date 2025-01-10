@@ -18,38 +18,35 @@ body {
 header {
     background: linear-gradient(135deg, #007BFF, #0056b3);
     color: white;
-    padding: 20px 0;
+    padding: 0; /* 移除內邊距 */
     text-align: center;
     position: relative;
+    margin-bottom: 0; /* 去除底部空白 */
 }
 
-header h1 {
-    font-size: 2.5rem;
-    margin: 0;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: white; /* Ensure title is in white */
-}
-
-/* Logo Styling */
-.logo {
-    width: 60px;
-    height: auto;
-    margin-right: 15px;
-    vertical-align: middle;
-}
-
-/* Adjust header layout */
 header .header-container {
+    padding: 20px 0; /* 添加內邊距 */
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 header h1 {
+    font-size: 2rem; /* 恢復標題大小 */
     margin: 0;
+    letter-spacing: 1px; /* 恢復字母間距 */
+    text-transform: uppercase;
+    color: white; /* Ensure title is in white */
     flex-grow: 1;
     text-align: left;
+}
+
+/* Logo Styling */
+.logo {
+    width: 100px; /* 恢復圖片大小 */
+    height: auto;
+    margin-right: 15px;
+    vertical-align: middle;
 }
 
 header .btn {
@@ -67,6 +64,37 @@ header .btn:hover {
     background-color: #e1e1e1;
 }
 
+/* Navigation Bar */
+.navbar {
+    background: linear-gradient(135deg, #0056b3, #003f7f);
+    padding: 10px 0;
+    margin-top: 0; /* 去除頂部空白 */
+    margin-bottom: 0; /* 去除底部空白 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-btn {
+    background-color: #fff;
+    color: #0056b3;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #003f7f;
+    color: #fff;
+}
+
 /* Main Content */
 main {
     padding: 20px 0;
@@ -80,6 +108,20 @@ h2 {
 }
 
 /* Activities Section */
+.activities-wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.activity-card {
+    flex: 0 0 100%; /* 每個卡片佔滿整個容器寬度 */
+    scroll-snap-align: start;
+    margin-right: 16px; /* 調整卡片之間的間距 */
+    box-sizing: border-box; /* 確保內邊距和邊框包含在元素的總寬度和高度內 */
+}
+
 .activity-card {
     background: #fff;
     border: 1px solid #ddd;
@@ -88,11 +130,17 @@ h2 {
     margin-bottom: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    max-width: 99.99%; /* 調整卡片的最大寬度，避免文字被遮住 */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.activity-card p {
+    margin-bottom: 10px; /* 調整段落之間的間距 */
 }
 
 .activity-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 .signup-btn {
@@ -135,6 +183,10 @@ h2 {
     list-style: none;
     padding: 0;
     margin-top: 20px;
+}
+
+.deadline {
+    color: red;
 }
 
 /* Footer */
